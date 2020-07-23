@@ -1416,14 +1416,6 @@ textarea.input {
 }
 
 @font-face {
-  font-family: "Harbell";
-  font-display: swap;
-  src: url("../fonts/Harbell.woff") format("woff"), url("../fonts/Harbell.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "PFD";
   font-display: swap;
   src: url("../fonts/PFDinTextCompPro-Medium_0.woff") format("woff"), url("../fonts/PFDinTextCompPro-Medium_0.woff2") format("woff2");
@@ -1475,14 +1467,6 @@ textarea.input {
   font-family: "PTSansNarrow";
   font-display: swap;
   src: url("../fonts/PTSansNarrow-Regular.woff") format("woff"), url("../fonts/PTSansNarrow-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "rouble";
-  font-display: swap;
-  src: url("../fonts/rouble.woff") format("woff"), url("../fonts/rouble.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
