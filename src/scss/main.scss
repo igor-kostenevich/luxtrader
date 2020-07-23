@@ -22,6 +22,10 @@
 	&.loaded {}
 }
 
+body._lock {
+	overflow: hidden;
+  }
+
 //sticky
 .content {
 	flex: 1 1 auto;
@@ -50,6 +54,7 @@
 	width: 100%;
 	top: 0;
 	left: 0;
+
 	&__container {
 		display: flex;
 		align-items: center;
@@ -147,7 +152,7 @@
 			height: 75px;
 		}
 
-		&.active {
+		&._active {
 			opacity: 1;
 			top: 0;
 			visibility: visible;
@@ -185,9 +190,11 @@
 	font-size: 14px;
 	color: #ffffff;
 	transition: color .3s ease 0s;
+
 	&._active {
 		color: $decor-color;
 	}
+
 	@media (min-width: 992px) {
 		&:hover {
 			text-decoration: underline;
@@ -199,7 +206,6 @@
 	}
 }
 
-.header__actions {}
 
 .actions-header {
 	@include flexbox();
@@ -224,18 +230,18 @@
 		}
 	}
 
-	@media (max-width: $md3+px) {
-		padding: 0px 0px 0px 30px;
-		display: inline-block;
-		margin: 40px 0px 0px 0px;
-		position: relative;
-		z-index: 0;
+	// @media (max-width: $md3+px) {
+	// 	padding: 0px 0px 0px 30px;
+	// 	display: inline-block;
+	// 	margin: 40px 0px 0px 0px;
+	// 	position: relative;
+	// 	z-index: 0;
 
-		span {
-			display: inline-block;
-			text-align: center;
-		}
-	}
+	// 	span {
+	// 		display: inline-block;
+	// 		text-align: center;
+	// 	}
+	// }
 }
 
 .actions-header__user {
@@ -243,6 +249,11 @@
 
 	@media (max-width: 890px) {
 		margin: 0px 0px 0px 15px;
+	}
+
+	@media (max-width: 400px) {
+		margin: 0px 0px 0px 7px;
+
 	}
 }
 
@@ -1188,7 +1199,8 @@
 	&__logo {
 		display: inline-block;
 		margin: 0px 0px 25px 0px;
-		@media (max-width: 767px){
+
+		@media (max-width: 767px) {
 			margin: 0px 0px 0px 0px;
 		}
 	}
@@ -1196,7 +1208,8 @@
 	// .footer__info
 	&__info {
 		color: $decor-color;
-		@media (max-width: 767px){
+
+		@media (max-width: 767px) {
 			margin: 25px 0px 0px 0px;
 		}
 	}
@@ -1204,9 +1217,10 @@
 	// .footer__menu
 	&__menu {
 		padding: 0 30px;
-		@media (max-width: 767px){
-		  margin: 0px 0px 20px 0px;
-		  padding: 0 15px;
+
+		@media (max-width: 767px) {
+			margin: 0px 0px 20px 0px;
+			padding: 0 15px;
 		}
 	}
 
@@ -1218,9 +1232,10 @@
 		li {
 			margin: 15px 15px 0px 0px;
 		}
-		@media (max-width: 767px){
-		  justify-content: center;
-		  margin: 15px 7px 0px 7px;
+
+		@media (max-width: 767px) {
+			justify-content: center;
+			margin: 15px 7px 0px 7px;
 		}
 	}
 
@@ -1247,9 +1262,10 @@
 		align-items: flex-end;
 		text-align: right;
 		padding: 12px 0px 0px 0px;
-		@media (max-width: 767px){
+
+		@media (max-width: 767px) {
 			align-items: center;
-		  }
+		}
 	}
 
 	// .footer__phone

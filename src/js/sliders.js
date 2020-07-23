@@ -41,7 +41,7 @@ $('.main-slider__body').slick({
 	dots: false,
 	arrows: true,
 	infinite: true,
-	speed: 1200,
+	speed: 600,
 	nextArrow: '.control-slider-quotes__circle',
 	prevArrow: '',
 	slidesToShow: 1,
@@ -49,3 +49,6 @@ $('.main-slider__body').slick({
 	fade: true,
 	adaptiveHeight: true
   });
+
+
+  
